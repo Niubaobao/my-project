@@ -4,3 +4,6 @@
 dev: 
 	npm run serve
 
+test:
+	npm un build
+
