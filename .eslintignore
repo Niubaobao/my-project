@@ -1,0 +1,9 @@
+public/*.js
+src/assets
+src/views/system/architecture/schoolArchitecture.vue
+src/icons/iconcolor/iconfont.js
+src/views/publicAdministration/approve/checking/count.vue
+config/*.json
+src/api
+src/routers/config.tsx
+src/**/*.ts
