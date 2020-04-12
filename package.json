@@ -28,7 +28,7 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint",
+    "*.{js,vue}": "eslint",
     "*.less": "stylelint",
     "*.css": "stylelint",
     "*.md": "markdownlint --config .markdownlint.json"
