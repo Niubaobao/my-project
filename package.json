@@ -70,6 +70,13 @@
       ]
     }
   },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.less": "stylelint",
+    "*.css": "stylelint",
+    "*.json": "jsonlint --quiet",
+    "*.md": "markdownlint --config .markdownlint.json"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions"

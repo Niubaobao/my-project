@@ -28,6 +28,7 @@ export default {
     this.formatArr(this.arr);
     this.calculateArr();
     this.deepClone(this.obja);
+    return NaN;
   },
   methods: {
     // formatArr(arr) {
