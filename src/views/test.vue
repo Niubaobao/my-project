@@ -39,7 +39,7 @@ export default {
     //   console.log(midArr.split(",") instanceof Array);
     // }
     //循环递归数组降维
-    formatArr(arr) {
+    formatAr  r(arr) {
       var ret = [];
       var format = (midarr = []) => {
         midarr.forEach(item => {
