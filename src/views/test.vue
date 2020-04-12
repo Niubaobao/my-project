@@ -24,6 +24,7 @@ export default {
   }),
   components: {},
   mounted() {
+    location.href = "javascript:void(0)";
     this.formatArr(this.arr);
     this.calculateArr();
     this.deepClone(this.obja);

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "precommit": "npm run lint",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "precommit": "npm run lint"
+    "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -35,7 +35,40 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "overrides": [
+      {
+        "files": [
+          "*-test.js",
+          "*.spec.js"
+        ],
+        "rules": {
+          "no-script-url": "off"
+        }
+      }
+    ],
+    "rules": {
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 2
+        }
+      ],
+      "linebreak-style": 0,
+      "global-require": 0,
+      "max-len": [
+        "error",
+        {
+          "code": 150,
+          "ignoreStrings": true
+        }
+      ],
+      "eslint linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
