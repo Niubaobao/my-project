@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "precommit": "lint-staged",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint --fix"
@@ -23,11 +22,15 @@
     "lint-staged": "^10.1.3",
     "vue-template-compiler": "^2.6.11"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.js": "eslint",
     "*.less": "stylelint",
     "*.css": "stylelint",
-    "*.json": "jsonlint --quiet",
     "*.md": "markdownlint --config .markdownlint.json"
   },
   "browserslist": [
