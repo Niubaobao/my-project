@@ -1,0 +1,7 @@
+[auth]
+token="9265a94dea034a6d93d80c2b5b2686014b1bd7b5d975492e94ca0e95df92d454"
+
+[defaults]
+url = https://sentry.io
+org = "your org"
+project = test

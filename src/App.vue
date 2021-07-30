@@ -2,7 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <!-- <HelloWorld msg="欢迎来到自动化项目,提交代码自动构建" /> -->
-    <test-js />
+    <!-- <test-js /> -->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,10 +12,14 @@
 
 export default {
   name: "App",
-  components: {
-    // HelloWorld,
-    TestJs: () => import("./views/test")
-  }
+  // components: {
+  //   // HelloWorld,
+  //   TestJs: () => import("./views/test"),
+  // },
+  mounted() {
+    console.log("error");
+    throw console.error("自定义错误,可以传送官网吗");
+  },
 };
 </script>
 
